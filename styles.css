@@ -27,8 +27,8 @@ button {
     background: url('./images/bob.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-x: -3.5vw; */
-    /* background-position-y: 0.5vw; */
+    background-position-x: -3.5vw;
+    background-position-y: 0.5vw;
     transform: rotateY(180deg);
     position: absolute;
     margin: 5vw;

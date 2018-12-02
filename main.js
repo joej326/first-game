@@ -239,7 +239,7 @@ function detectEntityCollision() {
             const hazardX = hazardArray[i].getBoundingClientRect().x;
             const hazardY = hazardArray[i].getBoundingClientRect().y;
     
-            if ( (Math.abs((playerX - hazardX) + 10) < 20) && (Math.abs((playerY - hazardY) + 10) < 20) ) {
+            if ( (Math.abs((playerX - hazardX) + 10) < 17) && (Math.abs((playerY - hazardY) + 10) < 17) ) {
                 player.remove();
                 hazardArray.map((hazard) => hazard.remove());
                 powerUpArray.map((power) => power.remove());

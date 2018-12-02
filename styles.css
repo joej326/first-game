@@ -24,7 +24,7 @@ button {
     transform: translate(-50%, -50%);
     width: 10vw;
     height: 10vw;
-    background: url('./images/me.png');
+    background: url('./images/bob.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position-x: -3.5vw; */

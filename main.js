@@ -54,16 +54,16 @@ let playerLeft = 0;
 
 function movePlayer() {
     document.querySelector('.mobile-controller').addEventListener('click', (e) => {
-        console.log(e);
+        const path = e.path || (e.composedPath && e.composedPath());
     
-        if (e.path[0].classList[1] === 'up-arrow') {
+        if (path[0].classList[1] === 'up-arrow') {
             player.style.top = (playerTop -= 5) + 'vw';
-        } else if (e.path[0].classList[1] === 'down-arrow') {
+        } else if (path[0].classList[1] === 'down-arrow') {
             player.style.top = (playerTop += 5) + 'vw';
-        } else if (e.path[0].classList[1] === 'left-arrow') {
+        } else if (path[0].classList[1] === 'left-arrow') {
             player.style.left = (playerLeft -= 5) + 'vw';
             player.style.transform = 'rotateY(0deg)';
-        } else if (e.path[0].classList[1] === 'right-arrow') {
+        } else if (path[0].classList[1] === 'right-arrow') {
             player.style.left = (playerLeft += 5) + 'vw';
             player.style.transform = 'rotateY(180deg)';
         }
